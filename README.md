@@ -1,4 +1,5 @@
 # Etch A Key
+Playable Link: https://bitbandit98.itch.io/etch-a-key
 
 Created in 1 week for the Sydney Game a Week event in July 2024.
 Credits
