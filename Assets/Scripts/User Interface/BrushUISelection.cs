@@ -16,8 +16,8 @@ public class BrushUISelection : MonoBehaviour
 
     private void Awake()
     {
-        SquareRenderer = Square.GetComponent<Renderer>();
-        CircleRenderer = Circle.GetComponent<Renderer>();
+       if(SquareRenderer == null) SquareRenderer = Square.GetComponent<Renderer>();
+       if(CircleRenderer == null) CircleRenderer = Circle.GetComponent<Renderer>();
         CurrentRenderer = CircleRenderer;
     }
 
@@ -37,11 +37,11 @@ public class BrushUISelection : MonoBehaviour
     {
         SetSelectionShape();
 
-        Vector3 CurrentPos = Selector.gameObject.transform.position;
-        float XScale = Selector.gameObject.transform.localScale.x / Selector.GetTextureSelected().GetWidth();
-        float YScale = Selector.gameObject.transform.localScale.y / Selector.GetTextureSelected().GetHeight();
+        Vector3 CurrentPos = Selector.GetTextureSelected().gameObject.transform.position;
+        float XScale = Selector.GetTextureSelected().transform.localScale.x / Selector.GetTextureSelected().GetWidth();
+        float YScale = Selector.GetTextureSelected().transform.localScale.y / Selector.GetTextureSelected().GetHeight();
         SelectionShape.transform.localScale = new Vector3(XScale, YScale, 1) * Brush.GetBrushRadius() * 2;
-        SelectionShape.transform.position = new Vector3(Selector.GetCurrentCoordinates().x * XScale - (Selector.transform.localScale.x/2), Selector.GetCurrentCoordinates().y * YScale - (Selector.transform.localScale.y / 2), 0) + CurrentPos + PositionalOffset;
+        SelectionShape.transform.position = new Vector3(Selector.GetCurrentCoordinates().x * XScale - (Selector.GetTextureSelected().transform.localScale.x/2), Selector.GetCurrentCoordinates().y * YScale - (Selector.GetTextureSelected().transform.localScale.y / 2), 0) + CurrentPos + PositionalOffset;
         SetNegativeColour(SelectedColour.GetCurrentColour());
     }
 

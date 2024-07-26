@@ -10,10 +10,10 @@ public class MainController : MonoBehaviour
 
     private void Awake()
     {
-        NewTexture = GetComponent<TextureGeneration>();
-        Colours = GetComponent<ColourSelection>();
-        UserBrush = GetComponent<Brush>();
-        Selector = GetComponent<TexturePixelSelector>();
+       if (NewTexture == null) NewTexture = GetComponent<TextureGeneration>();
+       if (Colours == null) Colours = GetComponent<ColourSelection>();
+       if (UserBrush == null) UserBrush = GetComponent<Brush>();
+       if (Selector == null) Selector = GetComponent<TexturePixelSelector>();
     }
 
     private void Start()
