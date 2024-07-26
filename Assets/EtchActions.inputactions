@@ -379,7 +379,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Computer Keyboard",
+                    "name": "Computer Keyboard (WASD)",
                     "id": "602e1a9e-34ef-41bc-955a-4cab61c3ca66",
                     "path": "2DVector(mode=2)",
                     "interactions": "",
@@ -426,6 +426,61 @@
                     "name": "right",
                     "id": "45d6dc8e-c362-448e-bfab-a8dae4dd3f85",
                     "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Computer Keyboard (Arrows)",
+                    "id": "a783a818-9fa6-4b85-b9c5-1cc3cfbe1d28",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "0c089c88-8aa6-4705-848b-609a3c74e83c",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "6efaa66d-7353-45e2-b5ef-56de7486e0fa",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d8b07924-c11b-4b4e-8242-84700e528721",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2cf433c7-247e-4be9-9287-a5fbb97bf965",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Computer Keyboard",

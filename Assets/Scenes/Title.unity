@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 1178281574}
   - component: {fileID: 1178281575}
   - component: {fileID: 1178281576}
+  - component: {fileID: 1178281577}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -625,6 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4b01722844d104aa4239f5c25521ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UITransitionControl: {fileID: 1178281577}
 --- !u!114 &1178281575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +670,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackBackgroundCG: {fileID: 1592388322}
+--- !u!114 &1178281577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178281569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b87c19e2521b94facc9717d5875637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: Canvas
 --- !u!1 &1298158922
 GameObject:
   m_ObjectHideFlags: 0

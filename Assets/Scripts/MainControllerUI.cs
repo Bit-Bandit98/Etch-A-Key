@@ -20,29 +20,11 @@ public class MainControllerUI : MonoBehaviour
     [SerializeField] private string BrushSizePrefix = "Brush Size: ";
     [SerializeField] private string SelectorSpeedPrefix = "Selector Speed: ";
 
-    public static event Action<float, bool> OnGameStart;
-    private float transitionTime = 1f;
-
-    private EtchActions Controls;
-    private bool canGoBackToTitle = false;
 
     private void Update()
     {
         UpdateUI();
     }
-
-    private void Start() {
-        OnGameStart?.Invoke(transitionTime, false);
-        Controls = new EtchActions();
-        Controls.Enable();
-        Controls.Player.BackToTitle.performed += ctx => GoBackToTitle();
-        Invoke(nameof(EnableBackToTitle), transitionTime + 1f);
-    }
-
-    private void EnableBackToTitle() {
-        canGoBackToTitle = true;
-    }
-
 
     public void UpdateUI()
     {
@@ -67,16 +49,6 @@ public class MainControllerUI : MonoBehaviour
         ColourImage.color = ColourSelector.GetCurrentColour();
     }
 
-    public void GoBackToTitle() {
-        if (!canGoBackToTitle) return;
-        canGoBackToTitle = false;
-        OnGameStart?.Invoke(transitionTime, true);
-        StartCoroutine(StartGameTransition());
-    }
 
-    private IEnumerator StartGameTransition() {
-        yield return new WaitForSeconds(transitionTime + .1f);
-        SceneManager.LoadScene("Title");
-    }
 
 }

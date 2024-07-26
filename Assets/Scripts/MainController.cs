@@ -53,7 +53,7 @@ public class MainController : MonoBehaviour
             // Paint the pixel at the current position
             UserBrush.PaintPixels(texture, StartXPos, StartYPos, color);
 
-            // Check if we have reached the end point
+            // Have we reached the end point?
             if (StartXPos == EndXPos && StartYPos == EndYPos) break;
 
             int ErrorValue2 = 2 * ErrorValue;

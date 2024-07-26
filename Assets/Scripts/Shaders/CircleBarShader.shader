@@ -1,3 +1,5 @@
+//Code taken from https://bgolus.medium.com/progressing-in-circles-13452434fdb9
+
 Shader "CircularBar" {
     Properties {
         _Frac ("Progress Bar Value", Range(0,1)) = 1.0

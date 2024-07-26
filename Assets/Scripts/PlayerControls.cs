@@ -11,6 +11,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private Brush CurrentBrush;
     [SerializeField] private ColourSelection SelectedColour;
     [SerializeField] private MainControllerUI UIController;
+    [SerializeField] private UITransitionController UITransitionControl;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ public class PlayerControls : MonoBehaviour
         Controls.Player.ChangeColour.performed += ctx => ChangeColour();
         Controls.Player.ChangeRoundness.performed += ctx => ChangeRoundness();
         Controls.Player.IncreaseSelectorSpeed.performed += ctx => ChangeSelectorSpeed();
+        Controls.Player.BackToTitle.performed += ctx => UITransitionControl.GoBackToTitle();
+
     }
 
 

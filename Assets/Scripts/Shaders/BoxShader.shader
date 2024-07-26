@@ -1,3 +1,4 @@
+// Code created based on https://bgolus.medium.com/progressing-in-circles-13452434fdb9
 Shader "FillableRectangleOutline" {
     Properties {
         _Frac ("Fill Progress", Range(0,1)) = 1.0

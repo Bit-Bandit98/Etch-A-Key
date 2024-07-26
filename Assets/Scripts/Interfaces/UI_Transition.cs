@@ -1,3 +1,5 @@
+// Property of Small-Ocelot https://github.com/Small-Ocelot
+
 using System.Collections;
 using UnityEngine;
 
@@ -7,10 +9,6 @@ public class UI_Transitions : MonoBehaviour {
 
     private float transitionTime;
 
-    private void Awake() {
-        UIControls.OnGameStart += OnSceneTransitionTrigger;
-        MainControllerUI.OnGameStart += OnSceneTransitionTrigger;
-    }
 
     private void OnSceneTransitionTrigger(float transitionTime, bool fadeToBlack) {
         this.transitionTime = transitionTime;
@@ -41,9 +39,13 @@ public class UI_Transitions : MonoBehaviour {
         blackBackgroundCG.alpha = 1f;
     }
 
+    private void OnEnable()
+    {
+        UITransitionController.OnGameStart += OnSceneTransitionTrigger;
+    }
+
     private void OnDisable() {
-        UIControls.OnGameStart -= OnSceneTransitionTrigger;
-        MainControllerUI.OnGameStart -= OnSceneTransitionTrigger;
+        UITransitionController.OnGameStart -= OnSceneTransitionTrigger;
     }
 
 }

@@ -629,6 +629,7 @@ MonoBehaviour:
   CurrentBrush: {fileID: 626130492}
   SelectedColour: {fileID: 626130493}
   UIController: {fileID: 1898797201}
+  UITransitionControl: {fileID: 1898797203}
 --- !u!114 &626130498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,6 +1253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e5470c9884eb9458281084812d0ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotationSpeed: 1
   LeftDial: {fileID: 3309165611002915992}
   RightDial: {fileID: 849348586}
   Selector: {fileID: 626130494}
@@ -1396,6 +1398,7 @@ GameObject:
   - component: {fileID: 1898797197}
   - component: {fileID: 1898797201}
   - component: {fileID: 1898797202}
+  - component: {fileID: 1898797203}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1522,6 +1525,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackBackgroundCG: {fileID: 1428333059}
+--- !u!114 &1898797203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898797196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b87c19e2521b94facc9717d5875637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: Title
 --- !u!1 &2083075360
 GameObject:
   m_ObjectHideFlags: 0

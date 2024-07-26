@@ -1,5 +1,6 @@
+// Property of Small-Ocelot https://github.com/Small-Ocelot
+
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SomeSounds : MonoBehaviour {
@@ -10,9 +11,6 @@ public class SomeSounds : MonoBehaviour {
     public float maxInterval = 2f;
     private Coroutine playSounds;
 
-    private void Awake() {
-        UIControls.OnGameStart += OnSceneTransitionTrigger;
-    }
 
     private void OnSceneTransitionTrigger(float transitionTime, bool fadeToBlack) {
         if (fadeToBlack) {
@@ -38,8 +36,14 @@ public class SomeSounds : MonoBehaviour {
         }
     }
 
+
+    private void OnEnable()
+    {
+        UITransitionController.OnGameStart += OnSceneTransitionTrigger;
+    }
+
     private void OnDisable() {
-        UIControls.OnGameStart -= OnSceneTransitionTrigger;
+        UITransitionController.OnGameStart -= OnSceneTransitionTrigger;
     }
 
 }
