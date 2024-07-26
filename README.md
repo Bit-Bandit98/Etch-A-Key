@@ -8,4 +8,4 @@ SmallOcelot - Programmer.
 Morgan Ainsley - Midi Keyboard Implementation. 
 Grifflon - 3D Modelling and Art. 
 
-All programming files in the "Scripts" folder is authored by Bit-Bandit98 unless otherwise stated at the top of the files.
+All programming files in the "Assets/Scripts" folder is authored by Bit-Bandit98 unless otherwise stated at the top of the file.
