@@ -1,0 +1,732 @@
+{
+    "name": "EtchActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "eb2ca1a1-2146-4d33-805d-451cac955a68",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "915d6c8c-6eaa-4374-8552-0173ae220664",
+                    "expectedControlType": "Dpad",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Clean Canvas",
+                    "type": "Button",
+                    "id": "58eed468-86e9-4cc3-b0f9-73a9cc5e4a9d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Increase Brush Size",
+                    "type": "Button",
+                    "id": "322e0bcc-19c6-4281-aa45-20a9373f2c09",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Increase Selector Speed",
+                    "type": "Button",
+                    "id": "5bedbfa9-b320-401f-9dd3-5d439c21c8a7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Change Colour",
+                    "type": "Value",
+                    "id": "495b87fa-84db-4f12-bf29-94eb44ed7467",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Change Roundness",
+                    "type": "Button",
+                    "id": "c43e8e09-4fe9-4146-8c9d-87b141c9d625",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back To Title",
+                    "type": "Button",
+                    "id": "b703308a-779c-4ab2-adb6-8e4139a93350",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Midi Keyboard (Speed 3) 2",
+                    "id": "bbb9d4e2-eedd-4632-83dd-7bc183e62c58",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=10,y=10)",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "4eb9e50f-3b70-46fc-bf04-c98e6becc78a",
+                    "path": "<MidiDevice>/note082",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "ecd3f00c-451f-4d5d-9678-0ad74bab174b",
+                    "path": "<MidiDevice>/note073",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "98998ff3-b827-45db-9dfc-16ba5800c5ef",
+                    "path": "<MidiDevice>/note072",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "c1c0214f-c380-4a41-9b79-bb2029a45f7d",
+                    "path": "<MidiDevice>/note083",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Midi Keyboard (Speed 3)",
+                    "id": "b3093b0e-043a-4768-b90d-e5b773ce9577",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=10,y=10)",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "d7494838-7ce1-47b4-ac7f-c9f9e0af3ebc",
+                    "path": "<MidiDevice>/note070",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "dc4c549b-e357-47a5-be54-f683ace2abc6",
+                    "path": "<MidiDevice>/note061",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "6e875a4b-895f-43bd-9f84-d120479ba5ca",
+                    "path": "<MidiDevice>/note060",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0990b76c-628c-471c-8282-feb3eb8fec71",
+                    "path": "<MidiDevice>/note071",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Midi Keyboard (Speed 2)",
+                    "id": "8424a24d-9249-4240-91d4-4baf1a422f51",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=5,y=5)",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "f58b97ee-6adb-4cfb-9442-c3589abbbb07",
+                    "path": "<MidiDevice>/note068",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "6500590a-990e-465e-aa98-7721d2d2a630",
+                    "path": "<MidiDevice>/note063",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "fc27bfe9-45e0-4b4d-afe3-26406b4afd12",
+                    "path": "<MidiDevice>/note062",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "aaaf2e56-13eb-461f-a29d-0e11efbc55b6",
+                    "path": "<MidiDevice>/note069",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Midi Keyboard (Speed 2) 2",
+                    "id": "19df6bdc-de87-4409-abd0-374ecc112315",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=5,y=5)",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "2e6a9480-4596-485d-beb3-f2fcc32b75d3",
+                    "path": "<MidiDevice>/note080",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "f8732719-4cbd-4b7e-8f81-5d6bafde63a8",
+                    "path": "<MidiDevice>/note075",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "bb696cd4-ac04-4b90-88e1-a4bbb52c3319",
+                    "path": "<MidiDevice>/note074",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "70440d7d-306f-48c8-8af1-a5025a293db4",
+                    "path": "<MidiDevice>/note081",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Midi Keyboard (Speed 1)",
+                    "id": "dc9461fc-cccb-4aa4-a375-f95f22360346",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "eaa9ec74-b9cc-4407-afbd-54cbbac07c31",
+                    "path": "<MidiDevice>/note064",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "6314a22c-9198-4c1f-bbbe-fcfb75b31cb0",
+                    "path": "<MidiDevice>/note066",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "5a0fbfb3-6ff3-43d8-badf-398a012a5f7c",
+                    "path": "<MidiDevice>/note067",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Midi Keyboard (Speed 1) 2",
+                    "id": "e12916a0-b09f-41c9-92dd-bc4962af3366",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "0695ec34-d185-42e8-8815-a266cfaefdb2",
+                    "path": "<MidiDevice>/note076",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "12d112ba-9eaa-41b0-a8de-35d9c48e7569",
+                    "path": "<MidiDevice>/note078",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2e2fce01-eedc-4778-b6b7-8759cac8c429",
+                    "path": "<MidiDevice>/note079",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Computer Keyboard",
+                    "id": "602e1a9e-34ef-41bc-955a-4cab61c3ca66",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "ScaleVector2",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "2b2933d9-efc6-488b-b558-f64e14f71fb7",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "97a0e4cf-c82a-4262-9895-0ee05f6d21d5",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "07883c00-17a4-4395-8d60-e4f85114e835",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "45d6dc8e-c362-448e-bfab-a8dae4dd3f85",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "e1251f89-b61e-480d-b4d3-eb0add25189b",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Clean Canvas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b47367f-1e8f-4247-84bc-9833fec55fd7",
+                    "path": "<MidiDevice>/note058",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Clean Canvas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Scroll Wheel",
+                    "id": "c1c15705-01db-4198-bcc6-6e9bf1a50550",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1,max=1)",
+                    "groups": "",
+                    "action": "Increase Brush Size",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "dffad674-9027-42c8-bea8-7084beab1839",
+                    "path": "<Mouse>/scroll/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Increase Brush Size",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d60ff7c5-3a8d-4439-b076-4f46e26958be",
+                    "path": "<Mouse>/scroll/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Increase Brush Size",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Key Pair",
+                    "id": "1ce5627f-c0bb-4656-9d77-72663fcfa597",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1,max=1)",
+                    "groups": "",
+                    "action": "Increase Brush Size",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "2855b101-fee7-4dbc-b198-f12b17b3d22a",
+                    "path": "<MidiDevice>/note057",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Increase Brush Size",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f7a2849e-c7e3-4e71-b14b-1a61cda04ed6",
+                    "path": "<MidiDevice>/note059",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Increase Brush Size",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Key Pair",
+                    "id": "816cf772-7fd8-48e3-a3b4-6345abdaaf87",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change Colour",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "dd407c27-b60a-4047-8061-533b897afd42",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Change Colour",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "6b49e943-9be8-458c-b593-4c906b44be15",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Change Colour",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fe6b4a2b-a916-4e8d-8bc5-fa7944a5f43c",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Change Roundness",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53933278-e2b1-440d-b50a-905f6de79271",
+                    "path": "<MidiDevice>/note050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Change Roundness",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Scroll Wheel",
+                    "id": "53b9e271-cb22-4560-90da-92afb2f538d9",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1,max=1)",
+                    "groups": "",
+                    "action": "Increase Selector Speed",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "e9ed9cab-1d62-4e23-ac5c-1000f3a9a5d9",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Increase Selector Speed",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "596502f6-61c8-48cd-8f6b-e1aa04738c78",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Increase Selector Speed",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "1a6a0639-acde-4879-a51a-31cb27ca700b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Increase Selector Speed",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f9f64238-1be5-4840-9373-773708d9de7d",
+                    "path": "<MidiDevice>/note048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Increase Selector Speed",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "998f7061-b79b-4a5b-863b-fc5b73bbaf4a",
+                    "path": "<MidiDevice>/note050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Increase Selector Speed",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Key Pair",
+                    "id": "829782d7-5354-4b0c-87c8-178992d0f765",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change Colour",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "f0c35573-696e-44a9-8892-7ff21c3cfbbf",
+                    "path": "<MidiDevice>/note054",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Change Colour",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7d128ace-e951-4b9a-bfee-52ee990bc08b",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Back To Title",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "31728951-bacc-4c98-9f83-815423f31383",
+            "actions": [
+                {
+                    "name": "Start Game",
+                    "type": "Button",
+                    "id": "4f80d658-3b0b-4984-9ede-ac5e5b0085f3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9f12497d-91fb-444e-b847-e22471354ea1",
+                    "path": "<MidiDevice>/note066",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Midi Keyboard",
+                    "action": "Start Game",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "17c399c9-5bcc-4b74-b721-e7d48f3fcccf",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Computer Keyboard",
+                    "action": "Start Game",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Computer Keyboard",
+            "bindingGroup": "Computer Keyboard",
+            "devices": []
+        },
+        {
+            "name": "Midi Keyboard",
+            "bindingGroup": "Midi Keyboard",
+            "devices": []
+        }
+    ]
+}
