@@ -25,12 +25,10 @@ public class BrushUISelection : MonoBehaviour
     {
         SetSelectionShape();
 
-
     }
 
     private void Update()
     {
-
         if (Enabled) DrawBrushUI(Selector);
     }
 
@@ -53,10 +51,8 @@ public class BrushUISelection : MonoBehaviour
         {
             SelectionShape = Circle;
         }
-
-
-
         SelectionShape.SetActive(false);
+
         if (Brush.GetRounded())
         {
             
@@ -75,12 +71,9 @@ public class BrushUISelection : MonoBehaviour
     private void SetNegativeColour(Color32 CurrentColour)
     {
         if (!EnableInvertedColor) return;
-        Color NewColor = new Color(1- CurrentColour.r, 1-CurrentColour.g, 1-CurrentColour.b, 1);
-        Debug.Log(NewColor);
+        Color NewColor = new Color(1- CurrentColour.r, 1 - CurrentColour.g, 1 - CurrentColour.b, 1);
         CurrentRenderer.material.SetColor("_FillColor", NewColor);
-        
+       
     }
-
-
 
 }

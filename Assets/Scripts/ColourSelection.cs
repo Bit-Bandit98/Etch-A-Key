@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
 using UnityEngine;
 
 public class ColourSelection : MonoBehaviour
@@ -26,9 +23,6 @@ public class ColourSelection : MonoBehaviour
         else SetColourIndex(CurrentColourIndex + Index);
 
     }
-
-
-
 
     public Color32 GetCurrentColour()
     {

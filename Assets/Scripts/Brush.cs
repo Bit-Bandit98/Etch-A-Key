@@ -12,6 +12,7 @@ public class Brush : MonoBehaviour
 
     public void PaintPixels(TextureGeneration GivenTG, int XCoordinate, int YCoordinate, Color32 PixelColor)
     {
+        //Setting bounds to prevent "Index out of bounds" errors
         int minX = Mathf.Max(0, XCoordinate - BrushSize);
         int maxX = Mathf.Min(GivenTG.GetWidth() -1 , XCoordinate + BrushSize);
         int minY = Mathf.Max(0, YCoordinate - BrushSize);
@@ -53,10 +54,7 @@ public class Brush : MonoBehaviour
         SetBrushRadius(BrushSize + Addition);
     }
     public int GetBrushRadius() { return BrushSize; }
-    public void SetRounded(bool SetRounded)
-    {
-        Rounded = SetRounded;
-    }
+    public void SetRounded(bool SetRounded) { Rounded = SetRounded;}
     public bool GetRounded() { return Rounded; }
 
 

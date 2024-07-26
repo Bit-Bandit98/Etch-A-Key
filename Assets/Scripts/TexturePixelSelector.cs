@@ -9,8 +9,6 @@ public class TexturePixelSelector : MonoBehaviour
     [SerializeField] private int SelectorSpeed = 1, SelectorSpeedMin = 1, SelectorSpeedMax = 10;
     [SerializeField, Range(0,0.5f)] private float BorderOffset = 0f;
 
-    
-
     private int CurrentXCoordinate, CurrentYCoordinate;
     private int LastXCoordinate, LastYCoordinate;
 
@@ -120,6 +118,4 @@ public class TexturePixelSelector : MonoBehaviour
     {
         return SelectorSpeed;
     }
-
-  
 }

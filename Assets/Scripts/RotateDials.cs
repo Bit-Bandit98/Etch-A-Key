@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RotateDials : MonoBehaviour
@@ -21,7 +19,6 @@ public class RotateDials : MonoBehaviour
 
     public void RotateDial(float LeftDialRotation, float RightDialRotation)
     {
-        Debug.Log("LEFT DIAL " + LeftDialRotation + ". RIGHT DIAL " + RightDialRotation);
         LeftDial.transform.localRotation *= Quaternion.Euler(LeftDialRotation *RotationSpeed, 0, 0);
         RightDial.transform.localRotation *= Quaternion.Euler(RightDialRotation * RotationSpeed, 0, 0);
     }
