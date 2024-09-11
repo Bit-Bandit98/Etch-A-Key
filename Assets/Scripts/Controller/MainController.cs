@@ -31,6 +31,7 @@ public class MainController : MonoBehaviour
 
     }
 
+    //The below method should be in the brush class. It doesn't make sense to leave it here. 
     private int StartXPos, EndXPos, StartYPos, EndYPos;
     private void DrawLine(TexturePixelSelector Points, TextureGeneration texture, Color32 color)
     {
